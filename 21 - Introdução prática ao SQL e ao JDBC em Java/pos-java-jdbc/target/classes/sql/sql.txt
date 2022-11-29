@@ -1,0 +1,22 @@
+-- DROP DATABASE "jdbc-sql-11";
+
+CREATE DATABASE "jdbc-sql-11"
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Portuguese_Brazil.1252'
+       LC_CTYPE = 'Portuguese_Brazil.1252'
+       CONNECTION LIMIT = -1;
+
+       create table userposjava(
+id bigint not null,
+nome character varying(255),
+email character varying(255),
+constraint user_pk primary key (id)
+)
+
+//
+insert into userposjava(id, nome, email)
+values(1, 'Romeu', 'romeu@gmail.com');
+
+
