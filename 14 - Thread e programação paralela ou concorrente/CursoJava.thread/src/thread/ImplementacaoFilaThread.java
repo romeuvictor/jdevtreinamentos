@@ -32,7 +32,7 @@ public class ImplementacaoFilaThread extends Thread  {
 						/*Gerar um envio em massa de e-mail*/
 						System.out.println(processar.getNome());
 						System.out.println(processar.getEmail());
-						
+						System.out.println("-------------------");
 						iteracao.remove();
 						
 						try {
