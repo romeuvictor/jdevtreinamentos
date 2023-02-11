@@ -37,7 +37,7 @@
 	<h5>Bem vindo ao Curso JSP</h5>
 	<input type="hidden" value= <%= request.getParameter("url")%> name="url">
 	
-	<form action="ServletLogin" method="POST" class="row g-3 needs-validation"  novalidate>
+	<form action="<%=request.getContextPath() %>/ServletLogin" method="POST" class="row g-3 needs-validation"  novalidate>
 
 	 <div class="mb-3">	
 		<label class="form-label" for="login">Login :</label>
