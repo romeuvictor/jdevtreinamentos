@@ -10,7 +10,79 @@ public class ModelLogin implements Serializable {
 	private String email;
 	private String login;
 	private String senha;
+	private boolean useradmin;
+	private String perfil;
+	private String sexo;
+	private String fotoUser;
+	private String extencaoFoto;
 	
+	private String cep;
+	private String logadouro;	
+	private String bairro;
+	private String localidade;
+	private String uf;
+	private String numero;
+	
+	
+	
+		
+	
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getLogadouro() {
+		return logadouro;
+	}
+
+	public void setLogadouro(String logadouro) {
+		this.logadouro = logadouro;
+	}
+
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+
+	public String getLocalidade() {
+		return localidade;
+	}
+
+	public void setLocalidade(String localidade) {
+		this.localidade = localidade;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
+
+	public boolean getUseradmin() {
+		return useradmin;
+	}
+
+	public void setUseradmin(boolean useradmin) {
+		this.useradmin = useradmin;
+	}
+
 	public boolean isNovo() {
 		if(this.id == null) {
 			return true; //inserir novo
@@ -50,6 +122,38 @@ public class ModelLogin implements Serializable {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	public String getPerfil() {
+		return perfil;
+	}
+
+	public void setPerfil(String perfil) {
+		this.perfil = perfil;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public String getFotoUser() {
+		return fotoUser;
+	}
+
+	public void setFotoUser(String fotoUser) {
+		this.fotoUser = fotoUser;
+	}
+
+	public String getExtencaoFoto() {
+		return extencaoFoto;
+	}
+
+	public void setExtencaoFoto(String extencaoFoto) {
+		this.extencaoFoto = extencaoFoto;
 	}
 
 
